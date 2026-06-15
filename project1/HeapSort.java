@@ -83,7 +83,7 @@ public class HeapSort {
 		if (right < n) { 
 			comparisonsHelper++;
 			if (list.get(right) > list.get(max)) {
-			max = right; // Compares parent to left
+			max = right; // Compares parent to right
 			}
 		}
 		
