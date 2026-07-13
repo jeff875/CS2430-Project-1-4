@@ -4,6 +4,16 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
+/**
+CS 2430 - 501
+Programming Project 3 – Summer 2026
+
+This class features methods that aim to compute the optimal subset of a set of twelve experiments, each with a weight and rating, given that
+the weight must not exceed 700 kg and the rating must be as large as possible. The methods include greedy algorithms, a brute force algorithm,
+and a dynamic programming algorithm that each generate a subset with a total weight and rating. These subsets are returned and displayed
+together for comparison.
+*/
+
 public class Strategies {
 	private static String boldOn = "\u001B[1m";
 	private static String boldOff = "\u001B[0m";
@@ -159,10 +169,14 @@ public class Strategies {
 	}
 	
 	/**
-	 * Computes the optimal subset of experiments using dynamic programming. A 13x701 2D-array is constructed where the rows correspond to each
-	 * experiment and columns each possible weight. Cells hold the total rating of the current subset, where each next column and row must
-	 * stay the same or increase in value. Therefore, the method prints the cell in the bottom right which holds the optimal rating. The optimal
-	 * subset's contents are appended to an empty list by working up through the bottom right to the top left of the 2D-array.
+	 * Computes the optimal subset of experiments using dynamic programming.
+	 * A 13x701 2D-array is constructed where the rows correspond to each
+	 * experiment and columns each possible weight. Cells hold the total 
+	 * rating of the current subset, where each next column and row must
+	 * stay the same or increase in value. Therefore, the method prints the 
+	 * cell in the bottom right which holds the optimal rating. The optimal
+	 * subset's contents are appended to an empty list by working up 
+	 * through the bottom right to the top left of the 2D-array.
 	 * 
 	 * @param list The experiment list.
 	 */
