@@ -1,0 +1,13 @@
+Project 3 - Optimal Selection
+
+This project is an assignment for CS2430 - Discrete Structures. It features an altered knapsack problem with three greedy algorithms,
+a brute force algorithm, and a dynamic programming algorithm. The problem includes a list of twelve experiments with two variables:
+weight and rating. The objective is to maximize the rating and minimize the weight, given that only 700 kg are allowed in the subset.
+The greedy methods solve the problem directly by selecting a single variable, with which they filter the list of experiments. The
+brute force method computes every possible combination of experiments and returns the optimal subset. The dynamic programming
+method constructs a large two-dimensional integer array filled with ratings in ascending order from left to right and top to bottom,
+remember past calculations and building the optimal subset as the table fills. The dynamic programming method has a better time
+complexity than the brute force method, although it takes up more space to function. These two approaches are guaranteed to return
+the optimal subset but take much longer to do so than the greedy methods. The results from each of these methods are displayed in the
+console and compared to each other for analysis. The best combinations of experiments are shown, along with those generated with the
+greedy methods.
